@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/3184000612_2262140168_689389474.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/691937063_4044429070_3235899278.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/2816103554_1489120128_2796130148.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/1848077339_3617061953_3145008085.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/276277949_1295674776_4233850677.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/2023345359_3884226058_926641071.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/cosmic_inflation_intro2/2160p60/partial_movie_files/InflationGridIntro2/3519152860_2119330919_2771057314.mp4'

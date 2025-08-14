@@ -1,0 +1,61 @@
+manim cosmic_demo.py ExpandingGrid -qk -o expanding_grid.mp4 --media_dir C:/Users/lisan/my-video/public/assets/cosmic-inflation/manim                                                                                                                                               
+
+manim cosmic_demo.py -p -qk
+
+manim cosmic_inflation_intro2.py InflationGridIntro2 -p -qk
+
+Je zit op Poetry 2.0: daar is poetry shell niet standaard. Gebruik dit (Windows/PowerShell):
+
+Snelste manier (zonder activeren)
+---------------------------------
+Run alles in de env met poetry run:
+
+poetry run python --version
+poetry run manim -h
+
+Activeren in je terminal (Poetry 2)
+-----------------------------------
+Maak/gebruik de env:
+
+pyenv local 3.11.9
+poetry env use python
+poetry install
+
+Activeer:
+
+poetry env activate
+
+Dit print zoiets als:
+
+& "C:\Users\lisan\AppData\Local\pypoetry\Cache\virtualenvs\3blue1brwon-...-py3.11\Scripts\activate.ps1"
+
+➡️ Kopieer & plak die regel en voer ’m uit. Dan is je prompt geactiveerd.
+(Als het niet werkt: voer eerst één keer uit:
+Set-ExecutionPolicy -Scope Process Bypass -Force
+en probeer opnieuw.)
+
+Deactiveren:
+
+deactivate
+
+"poetry shell" terughalen (optioneel)
+-------------------------------------
+poetry self add poetry-plugin-shell
+poetry shell
+
+Handige vaste setup (aanrader)
+------------------------------
+Zet de venv in je project (makkelijker voor VS Code):
+
+poetry config virtualenvs.in-project true
+poetry env remove --all
+poetry env use python
+poetry install
+
+Dan krijg je een .venv\Scripts\python.exe in je project.
+In VS Code kies je die via: Python: Select Interpreter → .venv.
+
+Snelle checks
+-------------
+poetry env info --path
+poetry run python -c "import sys; print(sys.executable)"
