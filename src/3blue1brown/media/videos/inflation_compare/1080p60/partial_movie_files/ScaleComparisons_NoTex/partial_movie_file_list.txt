@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/inflation_compare/1080p60/partial_movie_files/ScaleComparisons_NoTex/3461301770_732161205_3459604444.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/inflation_compare/1080p60/partial_movie_files/ScaleComparisons_NoTex/2109341798_588963268_3365702111.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/inflation_compare/1080p60/partial_movie_files/ScaleComparisons_NoTex/2109341798_3394500337_3088322171.mp4'
