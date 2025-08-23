@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/3461301770_1927489438_2014373288.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3932249147_2709704932.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_616299820_2826941554.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3585970359_896770564.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_1632884225_2760725617.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3585970359_1585759461.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3995643017_3897938100.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3585970359_277229611.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_4020009143_1478586787.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_2536175139_324594495.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseMathText/2109341798_3549649708_645212179.mp4'

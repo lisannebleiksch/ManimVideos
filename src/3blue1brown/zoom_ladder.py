@@ -4,9 +4,19 @@ import math
 
 class ZoomLadder_NoTex_V2(MovingCameraScene):
     def construct(self):
+        USE_GREENSCREEN = False
+        USE_TRANSPARENT = True
         BG = "#0c1736"
+        KEY = "#00FF00"
         ACCENT = YELLOW_A
-        self.camera.background_color = BG
+        
+        # Choose background: transparent, green screen, or normal
+        if USE_TRANSPARENT:
+            self.camera.background_color = "#00000000"  # Fully transparent
+        elif USE_GREENSCREEN:
+            self.camera.background_color = KEY
+        else:
+            self.camera.background_color = BG
 
         CAMERA_WIDTH = 12.0   # ← wider = less zoom
         TRACK_H = 0.6

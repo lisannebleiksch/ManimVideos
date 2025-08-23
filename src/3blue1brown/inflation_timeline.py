@@ -5,6 +5,19 @@ import math
 
 class TimelineZoomInflation(MovingCameraScene):
     def construct(self):
+        USE_GREENSCREEN = False
+        USE_TRANSPARENT = True
+        BG = "#0c1736"
+        KEY = "#00FF00"
+        
+        # Choose background: transparent, green screen, or normal
+        if USE_TRANSPARENT:
+            self.camera.background_color = "#00000000"  # Fully transparent
+        elif USE_GREENSCREEN:
+            self.camera.background_color = KEY
+        else:
+            self.camera.background_color = BG
+        
         # --------- TIME BOUNDS (seconds) ----------
         T_MIN = 1e-44
         T_MAX = 4.355e17   # ~13.8 Gyr
@@ -20,7 +33,7 @@ class TimelineZoomInflation(MovingCameraScene):
         T_TODAY      = T_MAX
 
         # --------- LAYOUT / TUNING ----------
-        axis_width = 24.0
+        axis_width = 14.0      # Reduced from 24.0 for better PNG sequence rendering
         axis_y     = -1.0
         tick_h     = 0.16
 
@@ -30,9 +43,9 @@ class TimelineZoomInflation(MovingCameraScene):
         PING_LINGER    = 1.00   # how long labels stay visible at waypoints (sec)
         PING_FADE      = 0.25   # fade-out time (sec)
         TRAVEL_RT      = 1.35   # camera travel time between waypoints (sec)
-        START_WIDTH    = 6.5    # initial camera width
-        NEAR_WIDTH     = 3.4    # width near inflation mid
-        TIGHT_WIDTH    = 2.2    # final tight zoom width
+        START_WIDTH    = 8.0    # Increased to accommodate smaller axis_width
+        NEAR_WIDTH     = 4.0    # Increased proportionally
+        TIGHT_WIDTH    = 2.8    # Increased proportionally
 
         # ---------- LOG MAP ----------
         log_min = math.log10(T_MIN)
@@ -69,6 +82,10 @@ class TimelineZoomInflation(MovingCameraScene):
             fill_color=YELLOW, fill_opacity=0.25
         ).move_to([(x_of_t(T_INFL_START)+x_of_t(T_INFL_END))/2, axis_y, 0])
 
+        # Set initial camera frame to encompass the full timeline
+        self.camera.frame.set_width(axis_width + 2.0)  # Add some padding
+        self.camera.frame.move_to([0, 0, 0])  # Center initially
+
         self.play(
             FadeIn(VGroup(title_bg, title), shift=UP*0.2),
             Create(axis),
@@ -95,16 +112,16 @@ class TimelineZoomInflation(MovingCameraScene):
 
         # ---------- START AT TODAY ----------
         focus_on(T_TODAY, width=START_WIDTH, rt=0.9)
-        today_tag = ping("Today (~13.8 Gyr)", T_TODAY, color=GREEN_B)
+        today_tag = ping("Today (~13.8 Gyr)", T_TODAY, color=BLUE_B)
         self.wait(0.35)
 
         # ---------- GLIDE LEFT WITH LONGER HOLDS ----------
         waypoints = [
-            (T_RECOMB,  START_WIDTH, "Recombination (CMB)", TEAL_B),
-            (T_BBN,     5.6,         "Big Bang Nucleosynthesis", BLUE_B),
-            (T_QCD,     5.0,         "QCD transition", PURPLE_B),
-            (T_BARYOGEN,4.6,         "Baryogenesis", MAROON_B),
-            (T_PLANCK,  4.0,         "Planck time", BLUE_C),
+            (T_RECOMB,  7.0,         "Recombination (CMB)", TEAL_B),      # Adjusted widths
+            (T_BBN,     6.0,         "Big Bang Nucleosynthesis", BLUE_B),
+            (T_QCD,     5.5,         "QCD transition", PURPLE_B),
+            (T_BARYOGEN,5.0,         "Baryogenesis", MAROON_B),
+            (T_PLANCK,  4.5,         "Planck time", BLUE_C),
         ]
 
         # Keep the previous tag visible a bit while we move; fade it as we arrive at the next
@@ -130,7 +147,7 @@ class TimelineZoomInflation(MovingCameraScene):
         self.play(
             self.camera.frame.animate
                 .move_to([x_of_t(t_mid), axis_y + 0.15, 0])  # small upward shift
-                .set_width(3.4),                              # wider view to avoid blow-up
+                .set_width(4.0),                              # Increased from 3.4 for better visibility
             run_time=1.0, rate_func=smooth
         )
 

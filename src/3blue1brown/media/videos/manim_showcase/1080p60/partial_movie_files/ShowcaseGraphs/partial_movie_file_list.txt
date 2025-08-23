@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseGraphs/3461301770_2215683747_2260040536.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseGraphs/2109341798_278573843_2194502794.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseGraphs/2109341798_2377497320_1889581747.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseGraphs/2109341798_3366045169_423612949.mp4'
+file 'file:C:/Users/lisan/PythonProjects/3blue1brown/src/3blue1brown/media/videos/manim_showcase/1080p60/partial_movie_files/ShowcaseGraphs/2109341798_3604186037_2687026711.mp4'
